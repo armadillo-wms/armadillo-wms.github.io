@@ -1,48 +1,147 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <title>Armadillo WMS</title>
-    <link rel="icon" type="image/x-icon" href="./images/armadillo.png">
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <title>Armadillo WMS</title>
+        <link rel="icon" type="image/x-icon" href="./images/armadillo.png">
+    </head>
+    <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container ">
-          <a class="navbar-brand  " href="#">
-            <img src="./images/armadillo.png" alt="..." height="50">
-            ARMADILLO WMX
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contatti.html">Contatti</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="documentazione.html">Documentazione</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-
+        <header>
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#"><strong><img src="./images/armadillo.png" alt="..." height="50">ARMADILLO WMS</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contatti.html">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="documentazione.html">Documentazione</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                  <div class="md-form my-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  </div>
+                </form>
+              </div>
+                
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar -->
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('./images/warehouse4point0_auto_x2_auto_x2.jpg'); height:60vh; background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
             
-        
-        
-      
-    <h1>Work in progress...</h1>
-</body>
+            <div class="mask rgba-black-light align-items-center" style="background-color: rgba(211, 228, 248, 0.7)" >
+              <!-- Content -->
+              <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12 mb-4 white-text text-center">
+                    <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong><br>SEMPLICEMENTE... GESTIONE DEL MAGAZZINO
+                      <small class="text-secondary"><br>come dovrebbe essere</small></strong></h1>
+                    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                    <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>ARMADILLO WMS</strong></h5>
+                    <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">Start now</a>
+                    <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About us</a>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!-- Full Page Intro -->
+        </header>
+        <!-- Main navigation -->
+        <!--Main Layout-->
+        <main>
+          <div class="container">
+            <!--Grid row-->
+
+              <div class="container my-5">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <div
+                         class="bg-image card shadow-1-strong"
+                         style="
+                                background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
+                                "
+                         >
+                      <div class="card-body text-white">
+                        <h5 class="card-title">Cos'è</h5>
+                        <p class="card-text">
+                          Armadillo wms è un semplice gestionale pensato per le piccole e medio imprese che prediligono la semplicità.
+                        </p>
+                        <a href="#!" class="btn btn-outline-light">Button</a>
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+              
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <div
+                         class="bg-image card shadow-1-strong"
+                         style="
+                                background-image: url('https://mdbootstrap.com/img/new/slides/028.jpg');
+                                "
+                         >
+                      <div class="card-body text-white">
+                        <h5 class="card-title">Perchè?</h5>
+                        <p class="card-text">
+                          Incrementa la produttività, elimina i tempi persi a cercare articoli che non sono tracciati o sostituisci i file excel
+                          con un gestionale accessibile in tempo reale da qualsiasi dispositivo, compreso il tuo smarphone o tablet.
+                        </p>
+                        <a href="#!" class="btn btn-outline-light">Button</a>
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+              
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                    <!-- Card -->
+                    <div
+                         class="bg-image card shadow-1-strong"
+                         style="
+                                background-image: url('https://mdbootstrap.com/img/new/slides/033.jpg');
+                                "
+                         >
+                      <div class="card-body text-white">
+                        <h5 class="card-title">Chi lo può usare</h5>
+                        <p class="card-text">
+                          Veloce ed intuitivo, può essere facilmente utilizzato da chiunque.
+                        </p>
+                        <a href="#!" class="btn btn-outline-light">Button</a>
+                      </div>
+                    </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+              </div>
+          </div>
+        </main>
+        <!--Main Layout-->
+
+    </body>
 </html>
