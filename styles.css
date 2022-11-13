@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
    }
-   body {
-    font-family: 'Montserrat';
-   }
-   
-   a {
+body {
+ font-family: 'Montserrat';
+}
+
+a {
     text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
+    color: inherit; 
+    }
+
+li {
+ list-style: none;
+}
+   
 
 .navbar {
     display: flex;
@@ -30,7 +33,11 @@
     font-size: 32px;
    }
    
-   
+   .footer{
+
+    background-color: #102030;
+    color: #fff;
+   }
    #logo {
     width: 15%;
     height: auto;
