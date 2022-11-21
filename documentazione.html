@@ -99,10 +99,10 @@
 
 
 
-        <div class="row " onclick="myFunction('primoAccesso')">
+        <div class="row " >
           <hr class="mb-3">
-          <button type="button text-center" class="btn btn-light">
-            <h2 class="h2-reponsive text-uppercase fw-bold mb-0 pb-md-3 pt-3 wow mb-0 " style="color: #102030;" data-wow-delay="0.3s">Primo Accesso</h2>
+          <button type="button text-center" class="btn btn-light" onclick="myFunction('primoAccesso')">
+            <h2 class="h2-reponsive text-uppercase fw-bold mb-0 pb-md-3 pt-3 wow mb-0 " style="color: #102030;" data-wow-delay="0.3s">Primo Accesso <i class="fas fa-caret-down"></i></h2>
             <p>Come accedere per la prima volta ed ottenere l'applicazione sul dekstop o la home del tuo smatphone</p>
           </button>
             
@@ -119,44 +119,82 @@
                   Non hai ancora un' account? <a href="mailto:armadillo.wms@gmail.com?subject=Richiesta%20Utenza&amp;body=Inserire%20le%20qui%20le%20varie%20domande%20riguardanti%20richiesta%20di%20demo%2C%20sicurezza%20ecc..%0A" class="link-danger" target="_blank">Contattaci</a>
                 </p>
               </li>
-              <!--
-              <li class="list-group-item">
-                <h6 class="fw-bold mt-2">Da smartphone</h6>
-                <img src="./images/gestioneAccountMobile2.png" class="img-fluid mt-2" alt="Responsive image">
-                <p class=" fw-normal mt-2">Cliccare in altro a sinistra per espandere il menu(1) e cliccare la voce <b>Account</b>(2)</p>
-              </li>
             </ul>
 
             <ul class="list-group mb-2">
               <li class="list-group-item mt-3">
-                <h4 class="h5-reponsive fw-bold">Pannello di controllo dell'Account</h4>
+                <h4 class="h5-reponsive fw-bold">Ottieni applicazione sul dekstop o sulla home dello smartphone</h4>
               </li>
               <li class="list-group-item">
-                <img src="./images/accountControlPanel.png" class="img-fluid mt-2" alt="Responsive image">
-                <p class=" fw-normal mt-2">A sinistra, nel pannello di controllo ci sono i bottoni che permettono di gestire e cambiare i dati relativi al tuo account personale. A destra ci sono le informazioni relative al tuo account, il nomedell' azienda, la mail ed il ruolo.</p>
+                <h6 class="fw-bold mt-2">Seleziona il browser che utilizzi</h6>
+
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                  <label class="btn btn-outline-secondary" for="btnradio1" onclick="showBrowser('chrome')">Google Chrome <i class="fab fa-chrome"></i></label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="btnradio2" onclick="showBrowser('safari')">Safari <i class="fab fa-safari"></i></label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="btnradio3" onclick="showBrowser('edge')">Microsoft Edge <i class="fab fa-edge"></i></label>
+                </div>
+
+                <div id="chrome" style="display:none ;">
+                  <ul>
+                    <li class="list-group-item ">
+                      <h6 class="fw-bold mt-2">Da PC</h6>
+                      
+                      <p class=" fw-normal mt-2">In altro a destra cliccare  l'icona  <i class="fas fa-ellipsis-v"></i>, altri strumenti, crea scorciatoia, inserire il nome che preferisci e clicca crea </p><br>
+                      <img src="./images/creascorciatoiaChrome.png" class="img-fluid mt-2 border " alt="Responsive image">
+                      <p class=" fw-normal">A qusto punto toverai l'icona di Armadillo WMS sul dekstop</p>
+                    </li>
+                    <li class="list-group-item">
+                      <h6 class="fw-bold mt-2">Da smartphone</h6>
+                      <p class=" fw-normal mt-2">In basso a destra cliccare  l'icona  <i class="fas fa-ellipsis-v"></i><br> <b>richiedi sito per dispositivi mobili</b>,<b> crea</b> e l'icona di Armadillo WMS apparirà nella home.
+                      
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="safari" style="display:none ;">
+                  <ul>
+                    
+                    <li class="list-group-item">
+                      <h6 class="fw-bold mt-2">Da IPhone</h6>
+                      <p class=" fw-normal mt-2">In basso cliccare l'icona centrale </p>
+                      <img src="./images/safariMobileBar.jpg" class="img-fluid mt-2 border " alt="Responsive image">
+                      <p class=" fw-normal mt-2" >clicca<b> Aggiungi alla schermata home</b> e l'icona di Armadillo WMS apparirà nella home.</p>
+                      
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="edge" style="display:none ;">
+                  <ul>
+                    <li class="list-group-item ">                      
+                      <p class=" fw-normal mt-2">In altro a destra cliccare  l'icona  <i class="fas fa-ellipsis-v"></i>, altri strumenti, crea scorciatoia, inserire il nome che preferisci e clicca crea </p><br>
+                      <img src="./images/creascorciatoiaChrome.png" class="img-fluid mt-2 border " alt="Responsive image">
+                      <p class=" fw-normal">A qusto punto toverai l'icona di Armadillo WMS sul dekstop</p>
+                    </li>
+                    
+                  </ul>
+                </div>
+
+                
               </li>
-              <li class="list-group-item">
-                <h6 class="fw-bold mt-2">Cambio Email</h6>
-                <img src="./images/PopupCambioMail.png" class="img-fluid mt-2" alt="Responsive image">
-                <p class=" fw-normal mt-2">Selezionando Cambio Email, si aprirà un popup dal quale è possibile cambiare la mail con la quale si effettua l'accesso e a cui vengono inviati i report.</p>
-              </li>
-              <li class="list-group-item">
-                <h6 class="fw-bold mt-2">Cambio Password</h6>
-                <img src="./images/CambioPassPopUp.png" class="img-fluid mt-2" alt="Responsive image">
-                <p class="fw-normal mt-2">Selezionando <b>Cambio Password</b>, si aprirà un popup di conferma e verrà inviata una mail con un link dal quale sarà possibile effettuare il cambio.</p>
-              </li>
-            -->
-            </ul>  
+
+              
+              
           </div>
         </div>
 
 
 
 
-        <div class="row " onclick="myFunction('GestioneAccount')">
+        <div class="row " >
           <hr class="mb-3">
-          <button type="button text-center" class="btn btn-light">
-            <h2 class="h2-reponsive text-uppercase fw-bold mb-0 pb-md-3 pt-3 wow mb-0 " style="color: #102030;" data-wow-delay="0.3s">Gestione Account</h2>
+          <button type="button text-center" class="btn btn-light" onclick="myFunction('GestioneAccount')">
+            <h2 class="h2-reponsive text-uppercase fw-bold mb-0 pb-md-3 pt-3 wow mb-0 " style="color: #102030;" data-wow-delay="0.3s">Gestione Account <i class="fas fa-caret-down"></i></h2>
             <p>work in progress</p>
           </button>
             
