@@ -3,4 +3,4 @@ Visita il [sito](https://armadillo-wms.github.io/) per tutte le informazioni o c
 
 
 
-![logo](https://armadillo-wms.github.io/images/armadillo.png)
+![logo](https://armadillo-wms.github.io/images/armadillo.webp)
